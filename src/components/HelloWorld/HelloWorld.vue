@@ -1,12 +1,16 @@
 <template>
   <div class="hello">
     <h1>I'm alive</h1>
+    <v-btn text>Normal</v-btn>
   </div>
 </template>
 
 <script>
+import { VBtn } from 'vuetify/lib'
+
 export default {
   name: 'HelloWorld',
+  components: {VBtn}
 }
 </script>
 
