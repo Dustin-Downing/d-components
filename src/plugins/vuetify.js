@@ -1,23 +1,33 @@
-import Vue from 'vue';
-import Vuetify from 'vuetify/lib';
+import Vue from 'vue'
+import Vuetify, { VApp, VBtn, VCard, VCardText, VContainer, VFlex, VHover, VIcon, VLayout, VTooltip, VImg, VSpacer, VProgressCircular, VToolbar, VToolbarTitle } from 'vuetify/lib'
+import 'vuetify/src/stylus/app.styl'
 
-Vue.use(Vuetify);
-
-export default new Vuetify({
+Vue.use(Vuetify, {
+  iconfont: 'mdi',
   theme: {
-      options: {
-        customProperties: true,
-      },
-    themes: {
-      light: {
-        primary: '#ee44aa',
-        secondary: '#424242',
-        accent: '#82B1FF',
-        error: '#FF5252',
-        info: '#2196F3',
-        success: '#4CAF50',
-        warning: '#FFC107'
-      },
-    },
+    primary: '#ee44aa',
+    secondary: '#424242',
+    accent: '#82B1FF',
+    error: '#FF5252',
+    info: '#2196F3',
+    success: '#4CAF50',
+    warning: '#FFC107'
   },
-});
+  components: {
+    VApp,
+    VBtn,
+    VCard,
+    VCardText,
+    VContainer,
+    VFlex,
+    VHover,
+    VIcon,
+    VLayout,
+    VTooltip,
+    VProgressCircular,
+    VToolbarTitle,
+    VToolbar,
+    VImg,
+    VSpacer
+  }
+})
